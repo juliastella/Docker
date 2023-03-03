@@ -11,7 +11,7 @@
   <h1 class="texto-1">Escreva sua Mensagem!</h1>
   <form class = "formulario" action="process.php" method="POST">
     <input id = "barra" type="text" name="message" id="message">
-    <input id = "texto-formulario" type="submit" value="Enviar Mensagem">
+    <input id = "butao_form" type="submit" value="Enviar Mensagem">
   </form>
 </body>
 </html>
