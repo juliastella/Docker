@@ -1,2 +1,40 @@
 nome: "Júlia"
 idade: 30
+
+# int e float
+
+numero: 2
+numero_A: 2.2
+
+# string
+
+sem_aspas: oi
+com_aspas: "oi"
+
+# nulo
+
+nulo: ~
+nulo_A: null
+
+# blooleanos
+
+verdade: True
+verdade_A : On
+
+falso: false
+falso_A: Off
+
+# array
+
+lista: [2,3,4]
+lista_A: 
+  - 1 
+  - 2
+  - 3
+
+# dicionario
+
+dicionario: {a:1, b:2}
+dicionario_A:
+  chave: 1
+  chave_b: 2
