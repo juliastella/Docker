@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo ao Meu Projeto 2</title>
+    <style>
+        /* Reset e Estilos Globais */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            background-color: #f4f4f9;
+            /* Um fundo cinza bem claro */
+            color: #333;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 960px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        /* Cabeçalho */
+        .main-header {
+            background-color: #ffffff;
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .main-header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .main-header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Seção de Conteúdo Principal */
+        .main-content {
+            padding: 40px 0;
+        }
+
+        .main-content h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: #34495e;
+        }
+
+        /* Layout de Cards */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+            /* Garante que os cards quebrem a linha em telas menores */
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+            flex-basis: 30%;
+            /* Tenta ocupar 30% da largura, permitindo 3 cards por linha */
+            min-width: 250px;
+            /* Largura mínima para cada card */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card .icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .card p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        /* Rodapé */
+        .main-footer {
+            background: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1>Meu Projeto Web</h1>
+            <p>Uma aplicação moderna, rápida e escalável.</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <h2>Principais Recursos</h2>
+
+            <div class="features">
+                <div class="card">
+                    <div class="icon">🚀</div>
+                    <h3>Performance</h3>
+                    <p>Construído com as melhores tecnologias para garantir velocidade e uma ótima experiência para o usuário.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">📱</div>
+                    <h3>Responsivo</h3>
+                    <p>Funciona perfeitamente em qualquer dispositivo, seja no desktop, tablet ou celular.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🔒</div>
+                    <h3>Segurança</h3>
+                    <p>Segurança é a nossa prioridade, com práticas robustas para proteger seus dados e sua privacidade.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Meu Projeto Web. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
