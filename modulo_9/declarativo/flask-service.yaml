@@ -1,0 +1,19 @@
+# flask-service.yaml
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask-service
+spec:
+  # O seletor conecta este serviço aos Pods com a label "app: flask-app".
+  selector:
+    app: flask-app
+  
+  # As portas definem como o tráfego de rede é roteado.
+  ports:
+    - protocol: TCP
+      port: 5000      # Porta que o serviço expõe.
+      targetPort: 5000 # Porta onde o container está escutando.
+      
+  # O tipo de serviço (LoadBalancer expõe externamente em nuvem).
+  type: LoadBalancer
